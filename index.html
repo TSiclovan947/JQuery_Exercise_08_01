@@ -5,6 +5,14 @@
   <title>HPlus Sport</title>
   <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script type="text/javascript"> 
+    $("document").ready(function() {
+        $("h2[data-type=vitamin]").css("background", "darkgreen");
+        $("h2[data-type=mineralwater]").css("background", "blue");
+        $("h2[data-type=proteinbar]").css("background", "rebeccapurple");
+    });
+    </script>
 </head>
 <body>
 
@@ -45,6 +53,9 @@
   <div class="container">
     <h2 class="headline">Products</h2>
     <p>H+ Sport is <em>dedicated to creating</em> eco-friendly, high-quality, nutrient-rich, nutritional products that <em>enhance active lifestyles</em>. We <a href="#guarantee">guarantee</a> it. Take a look at some of our products.</p>
+    <input type="checkbox" id="minerals" name="minerals" />
+    <input type="checkbox" id="vitamins" name="vitamins" />
+    <input type="checkbox" id="proteinbars" name="proteinbars" />
   </div><!-- container -->
   <ul class="product-list">
     <li class="product-item" data-prod_id="V-A1037">
@@ -190,6 +201,7 @@
         <p class="card-text">Michael Lewiston is a multi-faceted <em>creative person</em> who began his career as a designer for a small business firm, while also working as an independent <em>painter and sculptor</em>. In 2007, Henry Twill was impressed by Michael’s creative work in a national ad campaign for a high profile sports apparel company. Henry approached Michael, and asked him to <em>manage creative direction</em> for the H+ Sport ACTIVE apparel line.</p>
       </div><!-- person-card -->
   </div><!-- container -->
+</div>
 </section><!-- people -->
 
 <footer class="footer">
